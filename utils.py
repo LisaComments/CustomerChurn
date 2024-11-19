@@ -26,10 +26,10 @@ def create_gauge_chart(probability):
                   },
                 },
                 number={'font':{
-                  'size': '40',
+                  'size': 40,
                   'color': 'white'
                 }},
-                guage={
+                gauge={
                   'axis': {
                     'range': [0, 100],
                     'tickwidth': 1,
@@ -40,7 +40,7 @@ def create_gauge_chart(probability):
                   },
                   'bgcolor':
                   "rgba(0,0,0,0)",
-                  'borderWidth':
+                  'borderwidth':
                   2,
                   'bordercolor':
                   "white",
