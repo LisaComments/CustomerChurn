@@ -6,13 +6,14 @@ import os
 from openai import OpenAI
 import utils as ut
 
+
 #initialize openai client with groq client
 client = OpenAI(
   base_url="https://api.groq.com/openai/v1",
-  api_key=os.environ["GROQ_API_KEY"]
+  api_key=os.environ.get("GROQ_API_KEY")
 )
 
-
+#load models
 def load_model(filename):
   with open(filename, "rb") as file: 
     return pickle.load(file)
